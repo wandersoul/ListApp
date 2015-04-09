@@ -14,6 +14,7 @@
 		A136488C1AD736A1005C214E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A136488B1AD736A1005C214E /* Images.xcassets */; };
 		A136488F1AD736A1005C214E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A136488D1AD736A1005C214E /* LaunchScreen.xib */; };
 		A136489B1AD736A1005C214E /* ListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136489A1AD736A1005C214E /* ListAppTests.swift */; };
+		A13648A71AD73DB6005C214E /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13648A61AD73DB6005C214E /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A13648941AD736A1005C214E /* ListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13648991AD736A1005C214E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A136489A1AD736A1005C214E /* ListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppTests.swift; sourceTree = "<group>"; };
+		A13648A61AD73DB6005C214E /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				A136488B1AD736A1005C214E /* Images.xcassets */,
 				A136488D1AD736A1005C214E /* LaunchScreen.xib */,
 				A13648801AD736A1005C214E /* Supporting Files */,
+				A13648A61AD73DB6005C214E /* ItemManager.swift */,
 			);
 			path = ListApp;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				A13648871AD736A1005C214E /* SecondViewController.swift in Sources */,
 				A13648831AD736A1005C214E /* AppDelegate.swift in Sources */,
+				A13648A71AD73DB6005C214E /* ItemManager.swift in Sources */,
 				A13648851AD736A1005C214E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
