@@ -10,6 +10,9 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    //outlet to the table
+    @IBOutlet var tblItems: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,7 +23,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
-    
+    //Update the list when view returns
+    override func viewWillAppear(animated: Bool) {
+        tblItems.reloadData();
+    }
     
     
     //required function for UITableViewDataSource

@@ -26,7 +26,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     
     //button event
     @IBAction func buttonAddTask_Click(sender: UIButton){
-        println("The Button was clicked motherfucker")
+        itemMgrs.addTask(txtItem.text, desc: txtDesc.text);
+        self.view.endEditing(true);
+        //empty text boxes
+        txtItem.text = ""
+        txtDesc.text = ""
+        //shoot the user back to the newly modified list on the first tab!
+        self.tabBarController?.selectedIndex = 0;
     }
     
     //touch event will close the keyboard

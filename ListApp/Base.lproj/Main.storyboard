@@ -28,6 +28,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Items" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tblItems" destination="Yk2-3A-TCm" id="zXD-ve-7lR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
