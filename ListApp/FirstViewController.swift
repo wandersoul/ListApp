@@ -46,6 +46,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
         return cell;
     }
+    
+    //Providing delete functionallity for our table, from UITableViewDelegate
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        if(editingStyle == UITableViewCellEditingStyle.Delete){
+            itemMgrs.items.removeAtIndex(indexPath.row)
+            tblItems.reloadData()
+        }
+    }
+    
+    
 
 }
 
