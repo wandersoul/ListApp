@@ -8,7 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
+
+    //Outlets for text fields
+    @IBOutlet var txtItem: UITextField!
+    @IBOutlet var txtDesc: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,23 @@ class SecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //button event
+    @IBAction func buttonAddTask_Click(sender: UIButton){
+        println("The Button was clicked motherfucker")
+    }
+    
+    //touch event will close the keyboard
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    //UITextField Delegate
+    //called when 'return' key pressed. return NO to ignore.
+    func textFieldShouldReturn(textField: UITextField) -> Bool{
+        textField.resignFirstResponder();
+        return true
     }
 
 
