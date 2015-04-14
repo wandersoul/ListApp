@@ -12,6 +12,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     //outlet to the table
     @IBOutlet var tblItems: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

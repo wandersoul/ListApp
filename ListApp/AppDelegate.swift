@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //SLEEP FOR 3 seconds as per requirements
+        //NSThread.sleepForTimeInterval(3.0);
+
         // Override point for customization after application launch.
         return true
     }
