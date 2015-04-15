@@ -3,6 +3,10 @@
 //  ListApp
 //
 //  Created by 200235076 on 2015-04-09.
+//  Created by Marc Anderson
+//  Purpose: FirstViewController displays the list of tasks to the user. It also contains the ability to delete
+//  items from the list through the swipe right guesture. Users will be redirected here after completing the
+//  create new item on the secondary tab bar item.
 //  Copyright (c) 2015 200235076. All rights reserved.
 //
 
@@ -13,12 +17,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //outlet to the table
     @IBOutlet var tblItems: UITableView!
 
-    
+    //generated function
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    //generated function
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
